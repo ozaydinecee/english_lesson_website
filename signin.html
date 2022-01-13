@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+	
+    <div class="container">
+		<div class="screen">
+			<div class="screen__content">
+		<form action="signinsubmit.php" method="POST" class="login-email login">
+            <p class="login-text" style="font-size: 2rem; font-weight: 800;">Register</p>
+			<div class="input-group login__field ">
+				<input type="text"  class="login__input" placeholder="Name" name="name" required>
+			</div>
+			<div class="input-group login__field ">
+				<input type="text"  class="login__input" placeholder="Surname" name="surname"  required>
+			</div>
+			<div class="input-group login__field">
+				<input type="email"  class="login__input" placeholder="Email" name="email" required>
+			</div>
+			<div class="input-group login__field">
+				<input type="password"  class="login__input" placeholder="Password" name="password" required>
+            </div>
+            <div>
+                <p>Please select your profile:</p>
+                <input type="radio" id="html" name="profile" value="student">
+                <label for="student">Student</label>
+                <input type="radio" id="css" name="profile" value="instructor">
+                <label for="instructor">Instructor</label>
+            </div>
+			<div class="input-group ">
+				<button name="submit" class="button login__submit">
+					<span class="button__text">Register</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>	
+			</div>
+            
+			<p >Have an account? <a href="login.html"><span >Log In Here</span></a>.</p>
+		
+		</form>
+	</div>
+	</div>
+	</div>
+</body>
+</html>

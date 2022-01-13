@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div class="container">
+		<div class="screen">
+		<div class=" screen__content ">
+        <form action="login.php" method="POST" class="login-email login">
+			<!-- <input type="hidden" name="id" value="<?=@$_SESSION['id']?>"> -->
+			<p class="login-text" style="font-size: 2rem; font-weight: 800;">Log in</p>
+			<div class="input-group login__field ">
+				<input type="email" class="login__input " placeholder="Email" name="email"  required>
+			</div>
+			
+			
+			<div class="input-group login__field ">
+				<input type="password"  class="login__input" placeholder="Password" name="password" required>
+			</div>
+			<div class="input-group login__field ">
+				<div class="row">
+					<div class="col 6">
+				<button class="btn btn-primary" style="margin: 30px 0px 30px 0px;" name="action" type="submit" value="student">Login as Student</button>
+			</div>
+			<div class="col 6">
+				<button class="btn btn-primary" style="margin: 30px 0px 30px 0px;" name="action" type="submit" value="instructor">Login as Instructor</button>
+			</div>
+			</div>
+			</div>
+			<p class="login-register-text ">Don't have an account? <a href="signin.html" style="color:white;"><span class="login__submit">Register Here!</span></a>.</p>
+		</form>
+	</div>
+    </div>
+</div>
+</body>
+</html>
